@@ -1,11 +1,10 @@
 // Quick Exit — double-Esc or button/link navigates away and replaces history
 (function () {
-  var SAFE_URL = 'https://www.bom.gov.au/';
+  var SAFE_URL = 'https://www.google.com/';
   var lastEsc = 0;
 
   function exit() {
     try { window.location.replace(SAFE_URL); } catch (e) {}
-    try { window.open('about:blank', '_self'); } catch (e) {}
   }
 
   // Works with both <a> (no-JS fallback) and <button> elements
